@@ -11,7 +11,6 @@
 
 package org.usfirst.frc4127.Loggerbots.commands;
 import edu.wpi.first.wpilibj.command.Command;
-import org.usfirst.frc4127.Loggerbots.Robot;
 
 /**
  *

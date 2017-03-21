@@ -12,9 +12,7 @@
 package org.usfirst.frc4127.Loggerbots.subsystems;
 
 import org.usfirst.frc4127.Loggerbots.RobotMap;
-import org.usfirst.frc4127.Loggerbots.commands.*;
 import edu.wpi.first.wpilibj.SpeedController;
-import edu.wpi.first.wpilibj.Talon;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -45,6 +43,14 @@ public class Winch extends Subsystem {
 
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
+    }
+    
+    public void winchUp() {
+    	winchController.set(1);
+    }
+    
+    public void winchDown() {
+    	winchController.set(-1);
     }
 }
 
