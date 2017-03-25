@@ -52,5 +52,9 @@ public class Winch extends Subsystem {
     public void winchDown() {
     	winchController.set(-1);
     }
+
+	public void stop() {
+		winchController.stopMotor();
+	}
 }
 
