@@ -98,8 +98,8 @@ public class Robot extends IterativeRobot {
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
         // Check the joysticks and pass on their state to the drive
-        // drive.move(oi.getMoveX(), oi.getMoveY(), oi.getRotate(), oi.getHeading());
-        drive.move(oi.getMoveX(), oi.getMoveY(), oi.getRotate(), 0);
+        drive.move(oi.getMoveX(), oi.getMoveY(), oi.getRotate(), oi.getHeading());
+        // drive.move(oi.getMoveX(), oi.getMoveY(), oi.getRotate(), 0);
         // If the A button is depressed, run WinchUp
         if (oi.getAButton()) {
         	winch.winchUp();
