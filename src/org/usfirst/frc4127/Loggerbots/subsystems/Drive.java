@@ -53,7 +53,7 @@ public class Drive extends Subsystem {
 	public void move(double X, double Y, double R, double Heading){
 		//mechanum4WheelRobotDrive.mecanumDrive_Cartesian(X, Y, R, Heading);
 		//4WheelRobotDrive.mecanumDrive_Cartesian(X, Y, R, 0);
-		tank4WheelRobotDrive.arcadeDrive(X, R);
+		tank4WheelRobotDrive.arcadeDrive(X, Y);
 
 	}
     
