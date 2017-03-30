@@ -30,7 +30,7 @@ public class AutonomousCommand extends Command {
     	//Robot.drive.getMechanum4WheelRobotDrive().mecanumDrive_Cartesian(1,0,0, Robot.oi.getHeading());
     	Robot.drive.getTank4WheelRobotDrive().tankDrive(1, 1);
     	Timer.delay(2);
-    	Robot.drive.getTank4WheelRobotDrive().tankDrive(0, 0);
+    	Robot.drive.getTank4WheelRobotDrive().stopMotor();
     }
 
     // Called just before this Command runs the first time
